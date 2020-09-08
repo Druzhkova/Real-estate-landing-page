@@ -1,2 +1,3 @@
-# Real Estate Landing Page
-<a href="https://viktoriya-druzhkova.github.io/Real_Estate_Landing_Page/">Watch here</a>
+# Real estate landing page
+
+<a href="https://druzhkova.github.io/Real-estate-landing-page/">Watch here</a>
