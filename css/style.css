@@ -7,6 +7,7 @@
 
 body, html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Header
@@ -898,3 +899,36 @@ hr {
     background-position: bottom 70px right 540px;
   }
 }
+
+/* Button-scroll
+========================================================*/
+.up-button {
+  position: fixed;
+  z-index: 1;
+  bottom: 75px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  padding-top: 5px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 36px;
+  background-color: rgba(246, 245, 244, 0.7);
+  display: none;
+  cursor: pointer;
+}
+
+.up-button:hover {
+  background-color:#ffcc01;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.up-button span:hover {
+  color: #fff;
+}
+
+.shown {
+  display: inline-block;
+}
+
+
