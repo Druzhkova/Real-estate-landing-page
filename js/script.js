@@ -1,32 +1,12 @@
-let stepBlockOne = document.querySelector('#stepbl1');
-let stepBorderOne = document.querySelector('#stepbrdr1');
 
-let stepBlockTwo = document.querySelector('#stepbl2');
-let stepBorderTwo = document.querySelector('#stepbrdr2');
+const stepBlocks = document.querySelectorAll('.stepblock')
+const stepInfoLast = document.querySelectorAll('.stepinfolast')
 
-let stepBlockThree = document.querySelector('#stepbl3');
-let stepBorderThree = document.querySelector('#stepbrdr3');
-
-stepBlockOne.onmouseover = function() {
-  stepBorderOne.style.borderBottom = '3px solid white';
-}
-
-stepBlockOne.onmouseout= function() {
-  stepBorderOne.style.borderBottom = '3px solid black';
-}
-
-stepBlockTwo.onmouseover = function() {
-  stepBorderTwo.style.borderBottom = '3px solid white';
-}
-
-stepBlockTwo.onmouseout= function() {
-  stepBorderTwo.style.borderBottom = '3px solid black';
-}
-
-stepBlockThree.onmouseover = function() {
-  stepBorderThree.style.borderBottom = '3px solid white';
-}
-
-stepBlockThree.onmouseout= function() {
-  stepBorderThree.style.borderBottom = '3px solid black';
-}
+stepBlocks.forEach((block, index) => {
+  block.addEventListener('mouseover', () => {
+    stepInfoLast[index].style.borderBottom = '3px solid white';
+  })
+  block.addEventListener('mouseout', () => {
+    stepInfoLast[index].style.borderBottom = '3px solid black';
+  })
+})
