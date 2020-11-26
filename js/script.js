@@ -49,3 +49,59 @@ closeCalc.addEventListener("click", function () {
   calculator.classList.toggle("hidden");
 });
 
+const basePrice = 1100;
+const totallPriceElement = document.querySelector("#calc__total-price");
+
+const inputs = document.querySelectorAll("input");
+const district = document.querySelector(".district");
+
+const wallMaterial = document.querySelectorAll('input[name="wall-material"]');
+const numberOfStoreys = document.querySelectorAll('input[name="number-of-storeys"]');
+const numberOfRooms = document.querySelectorAll('input[name="rooms"]');
+
+const squareInput = document.querySelector(".calc__input-short");
+const squareRange = document.querySelector(".calc__range-input");
+
+squareRange.addEventListener("input", () => {
+  squareInput.value = squareRange.value;
+});
+
+squareInput.addEventListener("input", () => {
+  squareRange.value = squareInput.value;
+});
+
+inputs.forEach((item) => {
+  item.addEventListener("input", calculate);
+});
+
+district.addEventListener("change", calculate);
+
+function calculate() {
+  const square = +squareInput.value;
+  let wallMaterialCost;
+  let numberOfStoreysCost;
+  let numberOfRoomsCost;
+  let districtCost;
+
+  wallMaterial.forEach((item) =>
+    item.checked ? (wallMaterialCost = +item.value) : null
+  );
+  numberOfStoreys.forEach((item) =>
+    item.checked ? (numberOfStoreysCost = +item.value) : null
+  );
+  numberOfRooms.forEach((item) =>
+    item.checked ? (numberOfRoomsCost = +item.value) : null
+  );
+  districtCost = district.value;
+
+  const totalPrice = Math.round(
+    basePrice *
+      square *
+      wallMaterialCost *
+      numberOfStoreysCost *
+      numberOfRoomsCost *
+      districtCost
+  );
+  totallPriceElement.textContent = totalPrice;
+}
+calculate()
