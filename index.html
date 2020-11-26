@@ -19,9 +19,10 @@
           <li><a href="#">Apartment</a></li>
           <li><a href="#">How it Work</a></li>
           <li><a href="#">Agents</a></li>
-          <li><a class="contacts" href="#">Contact Us</a></li>
-          <li><a href="#">Join Us</a></li>
-          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a class="calculator" href="#">Apartment cost calculator</a></li>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Sign up</a></li>
         </ul>
         <span class="toggle">&#9776;</span>
       </label>
@@ -342,6 +343,131 @@
       </div>
     </div>
   </footer>
+
+  <!-- Apartment cost calculator -->
+  <div class="calc hidden">
+    <div class="blur-background">
+      <div class="calc__inner">
+        <span class="close-calc">&#x2717;</span>
+        <form id="calc__form">
+          <h1 class="calc__heading">Apartment cost calculator</h1>
+          
+          <!-- Area -->
+          <div class="calc__section">
+            <label class="calc__apartment-area calc__section-title">
+              <span>Apartment area:</span>
+              <input type="number" min="0" max="200" value="50" class="input-short" />
+              <span>м²</span>
+            </label>
+            <input type="range" class="calc__range-input" min="0" max="200" value="50" step="1" />
+          </div>
+          <!-- // Area -->
+
+          <!-- District -->
+          <div class="calc__section">
+            <h4 class="calc__section-title">District of Minsk: *</h4>
+            <select class="calc-title-light">
+              <option>Item 1</option>
+              <option>Item 2</option>
+              <option>Item 3</option>
+              <option>Item 4</option>
+              <option>Item 5</option>
+            </select>
+          </div>
+          <!-- // District -->
+
+          <!-- Wall material -->
+          <div class="calc__section">
+            <h4 class="calc__section-title">Wall material:</h4>
+            <label class="radio-wrapper">
+              <input type="radio" class="radio" name="type" value="1" />
+              <p class="calc-title-light">Frame-block</p>
+            </label>
+            <label class="radio-wrapper">
+              <input type="radio" class="radio" name="type" value="1.3" checked />
+              <p class="calc-title-light">Brick</p>
+            </label>
+            <label class="radio-wrapper">
+              <input type="radio" class="radio" name="type" value="1.5" />
+              <p class="calc-title-light">Panel </p>
+            </label>
+            <label class="radio-wrapper">
+              <input type="radio" class="radio" name="type" value="1.5" />
+              <p class="calc-title-light">Large block</p>
+            </label>
+          </div>
+          <!-- // Wall material -->
+
+          <!-- Number of storeys -->
+          <div class="calc__section">
+            <h4 class="calc__section-title">Number of storeys:</h4>
+            <label class="radio-wrapper">
+              <input type="radio" class="radio" value="1" checked />
+              <p class="calc-title-light">5 or less</p>
+            </label>
+            <label class="radio-wrapper">
+              <input type="radio" class="radio" value="1.1" />
+              <p class="calc-title-light">6 and up</p>
+            </label>
+          </div>
+          <!-- // Number of storeys -->
+
+          <!-- Number of rooms -->
+          <div class="calc__section">
+            <h4 class="calc__section-title">Number of rooms *</h4>
+            <div class="calc__number-of-rooms">
+              <label>
+                <input class="rooms-radio-real" type="radio" name="rooms" value="1" />
+                <span class="rooms-radio-fake">1</span>
+              </label>
+      
+              <label>
+                <input class="rooms-radio-real" type="radio" name="rooms" value="1" checked />
+                <span class="rooms-radio-fake">2</span>
+              </label>
+      
+              <label>
+                <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+                <span class="rooms-radio-fake">3</span>
+              </label>
+      
+              <label>
+                <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+                <span class="rooms-radio-fake">4</span>
+              </label>
+      
+              <label>
+                <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+                <span class="rooms-radio-fake">5</span>
+              </label>
+            </div>
+          </div>
+          <!-- // Number of rooms -->
+
+          <div class="calc__section">
+            <p class="calc-title-light">* - required fields</p>
+          </div>
+
+          <!-- Apartment cost -->
+          <div class="calc__price">
+            <div class="calc__price-title">Apartment cost:</div>
+            <div class="calc__price-value">
+              <span id="calc__total-price">0</span>
+              &dollar;
+            </div>
+          </div>
+          <!-- // Apartment cost -->
+
+          <div class="calc__section">
+            <p class="calc-title-light">Estimated cost is approximate.</p>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+
+
+  </div>
   <span class="up-button" type="button"><span class="up-arrow">&uarr;</span></span>
   <script src="./js/script.js" type="text/javascript"></script>
 </body>
