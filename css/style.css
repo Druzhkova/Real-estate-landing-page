@@ -50,13 +50,13 @@ nav {
 }
 
 .menu li a:hover{
-  background: #76CDD8;
+  background: #ffcc01;
   border-radius: 3px;
   color: #fff;
 }
 
 .menu li a:active {
-  background:  #7bbbc6;
+  background:  #d3a900;
   color: #fff;
 }
 
@@ -106,7 +106,7 @@ nav {
   max-width: 590px;
   display: flex;
   justify-content: space-between;
-  background-color: #76CDD8;
+  background-color: #ffcc01;
   color: #fff;
 }
 
@@ -162,7 +162,7 @@ nav {
 
 .stats-square {
   font-size: 40px;
-  color: #76CDD8;
+  color: #ffcc01;
   margin-bottom: 15px;
 }
 
@@ -196,6 +196,7 @@ nav {
   max-width: 348px;
   background: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 .card-info {
@@ -206,7 +207,7 @@ nav {
 
 .card-info .money {
   font-size: 18px;
-  color: #76CDD8;
+  color: #ffcc01;
   font-weight: 700;
 }
 
@@ -250,7 +251,7 @@ nav {
   width: 115px;
   border: none;
   height: 70px;
-  background:#76CDD8;
+  background:#ffcc01;
   color: #fff;
   font-size: 15px;
   margin-left: -4px;
@@ -259,7 +260,7 @@ nav {
   cursor: pointer;
 }
 .apart input[type=submit]:active {
-  background:#7bbbc6;
+  background:#d3a900;
 }
 
 .all {
@@ -275,12 +276,12 @@ nav {
 }
 
 .all:hover {
-  background:#76CDD8;
+  background:#ffcc01;
   color: #fff;
 }
 
 .all:active {
-  background:#7bbbc6;
+  background:#d3a900;
   color: #fff;
 }
 
@@ -315,7 +316,7 @@ nav {
 }
 
 .stepblock:hover {
-  background: #76CDD8;
+  background: #ffcc01;
   color: #fff;
 }
 
@@ -446,6 +447,7 @@ nav {
   max-width: 344px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
+  cursor: pointer;
 }
 
 .agent-card:hover {
@@ -458,7 +460,7 @@ nav {
 }
 
 .agent-name {
-  color: #76CDD8;
+  color: #ffcc01;
 }
 
 .agent-cards {
@@ -486,7 +488,7 @@ nav {
 .location {
   font-size: 18px;
   padding: 30px 87px 35px 55px;
-  background: #76CDD8;
+  background: #ffcc01;
   color: #fff;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0,0,0,.7);
@@ -633,12 +635,12 @@ hr {
     line-height: 40px;
     width: 100%;
     color: #000000;
-    background: #76CDD8;
+    background: #ffcc01;
     transition: all .1s linear;
   }
 
   .toggle:hover {
-    background: #7bbbc6;
+    background:#d3a900;
   }
 
   #checkbox-menu:checked + label .touch li{
@@ -943,7 +945,7 @@ hr {
 }
 
 .up-button:hover {
-  background-color: #76CDD8;
+  background-color: #ffcc01;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
